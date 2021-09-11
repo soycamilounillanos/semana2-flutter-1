@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:semanda2flutter1/pages/keyboard.page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -6,7 +7,6 @@ class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
-
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -18,22 +18,48 @@ class _HomePageState extends State<HomePage> {
         children: [
           Expanded(
             child: Container(
-              child: Text("Zona"),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Zona"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text("Zona"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text("Zona"),
+                    ],
+                  ),
+                ],
+              ),
               color: Colors.blue,
             ),
           ),
           Expanded(
             child: Container(
-              child: Text("Zona"),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Zona"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text("Zona"),
+                    ],
+                  ),
+                ],
+              ),
               color: Colors.red,
             ),
           ),
-          Expanded(
-            child: Container(
-              child: Text("Zona"),
-              color: Colors.green
-            )
-          )
+          createKeyboard()
         ],
       )
     );
